@@ -1,0 +1,57 @@
+<h2>Get Request (https://jsonplaceholder.typicode.com/posts/1/comments)</h2>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Post Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Body</th>
+  </tr>
+  <tr *ngFor ="let com of lstcomments">
+    <td>{{com.id}}</td>
+    <td>{{com.postId}}</td>
+    <td>{{com.name}}</td>
+    <td>{{com.email}}</td>
+    <td>{{com.body}}</td>
+  </tr>
+</table>
+
+<br>
+<h2>Get Request (Using Parameters) (https://jsonplaceholder.typicode.com/comments?id=3)</h2>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Post Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Body</th>
+  </tr>
+  <tr *ngFor ="let com of lstPosts">
+    <td>{{com.id}}</td>
+    <td>{{com.postId}}</td>
+    <td>{{com.name}}</td>
+    <td>{{com.email}}</td>
+    <td>{{com.body}}</td>
+  </tr>
+</table>
+<br>
+<h2>Post data returned (https://jsonplaceholder.typicode.com/posts)</h2>
+<p>id: {{objPosts.id}}</p>
+<p>UserId: {{objPosts.userId}}</p>
+<p>title: {{objPosts.title}}</p>
+<p>body: {{objPosts.body}}</p>
+<br>
+<h2>Put data returned (https://jsonplaceholder.typicode.com/posts/1)</h2>
+<p>id: {{objputs.id}}</p>
+<p>UserId: {{objputs.userId}}</p>
+<p>title: {{objputs.title}}</p>
+<p>body: {{objputs.body}}</p>
+<br>
+<h2>Patch data returned(https://jsonplaceholder.typicode.com/posts/1)</h2>
+<p>id: {{objpatch.id}}</p>
+<p>UserId: {{objpatch.userId}}</p>
+<p>title: {{objpatch.title}}</p>
+<p>body: {{objpatch.body}}</p>
+<br>
+<h2>Delete API (https://jsonplaceholder.typicode.com/posts/1)</h2>
+<p>Message : {{message}} </p>
